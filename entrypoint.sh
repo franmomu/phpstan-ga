@@ -9,6 +9,7 @@ echo "::endgroup::"
 IGNORE_PLATFORM_REQS=""
 if [ "$CHECK_PLATFORM_REQUIREMENTS" = "false" ]; then
     IGNORE_PLATFORM_REQS="--ignore-platform-reqs"
+    composer global require jetbrains/phpstorm-stubs
 fi
 
 NO_DEV="--no-dev"
