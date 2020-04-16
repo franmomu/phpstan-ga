@@ -24,6 +24,7 @@ RUN composer global require phpstan/phpstan ^0.12.18 \
     && composer global require phpstan/phpstan-symfony \
     && composer global require phpstan/phpstan-mockery \
     && composer global require phpstan/phpstan-webmozart-assert \
+    && composer global require jetbrains/phpstorm-stubs \
     && composer global show | grep phpstan
 
 ADD entrypoint.sh /entrypoint.sh
